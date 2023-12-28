@@ -1,0 +1,630 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+   
+    
+   overflow-wrap: break-word;
+    
+}
+
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.navbar {
+
+	width:100%;
+    justify-content: space-between;
+    position:fixed;
+	z-index: 1;
+    background-image: linear-gradient(rgba(12,3,51,0.2),rgba(12,3,51,0.2));
+	
+    
+	
+}
+.nav-link{
+	color: white;
+    font-family: 'Cormorant Garamond', serif;
+}
+.navbar-toggler span{
+    color: blue;
+}
+.img {
+	margin-left: 0;
+	height: 65px;
+}
+.logo{
+	margin-top: 0;
+}
+
+.itemhacc:hover{
+	color: yellow;
+	/* border-bottom: 3px solid  rgb(20, 245, 215);
+	border-top: 3px solid  rgb(20, 245, 215); */
+}
+
+.itemhacc{
+	font-family: 'Mooli', sans-serif;
+}
+.offcanvas-body{
+	font-family: 'Mooli', sans-serif;
+}
+.detailsbtn{
+	width: 100px;
+	height: 30px;
+}
+.detailsbutton{
+	justify-content: center;
+}
+.dropdown-toggle{
+	padding-left: 0;
+	padding-right: 0;
+}
+@media (min-width:992px){
+	.dropdown-toggle{
+		padding-left:10px ;
+		padding-right: 10px;
+	}
+}
+
+
+ 
+    .home{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(12,3,51,0.2),rgba(12,3,51,0.2));
+        position: relative;
+        padding-top: 180px;
+        
+    }
+    .back-video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    
+    }
+    @media (min-aspect-ratio:16/9){
+        .back-video{
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media (max-aspect-ratio:16/9){
+        .back-video{
+            width: auto;
+            height:100%;
+        }
+    }
+    .home h1,h4{
+        text-align: center;
+        font-size: 80px;
+        color: white;
+        font-family: 'Great Vibes', cursive;
+        text-shadow: 0px 2px 2px black;
+
+    }
+  
+/* Home Section End */
+
+/* Section Book Start */
+.book{
+
+    background: #f9f9f9;
+    padding: 50px;
+    
+}
+.main-text h1{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    text-shadow: 0px 1px 1px white;
+    font-weight: 600;
+    color: black;
+}
+
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: rgb(164, 97, 97);;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+
+
+
+
+
+.parabook {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #190d42; /* Set your desired text color */
+    margin-bottom: 20px; /* Adjust spacing at the bottom of the paragraph */
+    text-align: justify;
+    font-family: 'PT Serif', serif;
+  }
+
+.list-group {
+    margin: 20px;
+    padding: 0;
+  }
+
+  .list-group-item {
+    border: none;
+    border-radius: 0;
+    background-color: #f8f9fa; /* Light background color */
+  }
+
+  .list-group-item span {
+    color: rgb(46, 158, 186);
+    font-size: 25px;
+    
+    font-family: 'Libre Baskerville', serif;
+    
+  }
+
+  /* Optional: Add some spacing between list items for better readability */
+  .list-group-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+/* Section Book End */
+
+
+
+
+
+/* Section Packages Start */
+
+.main-txt h1{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: black;
+}
+/* .main-txt h1 span{
+    color: indigo;
+} */
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card .pimage{
+    border-radius: 5px;
+    height: 250px;
+    
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+     color:  rgb(33, 140, 183);;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(164, 97, 97);;
+    color: white;
+    border-radius: 5px;
+}
+/* Section Packages End */
+
+
+
+
+/* Section Services Start */
+.services{
+     /* background: #f9f9f9; */
+     margin-top: 30px; 
+}
+.main-txt h1{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: black;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color:  rgb(33, 140, 183);;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* Section Services End */
+
+
+
+
+
+/* Section Gallary Start */
+.gallary{
+    margin-top: 50px;
+}
+.main-txt h1{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: black;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* Section Gallary End */
+
+
+
+
+/* About Start */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(24, 139, 192, 0.599);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+
+.aboutpara{
+    text-align: justify;
+    font-size: 16px;
+}
+.span-about{
+    color: rgba(24, 139, 192, 0.599);
+    font-size: 25px;
+}
+
+/* About End */
+
+
+
+
+
+
+
+
+
+
+.reviews {
+    padding: 100px 6% 100px;
+    text-align: center;
+}
+
+.reviews .main-txt h3 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.reviews .card-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 0.90rem;
+    margin-top: 30px;
+}
+
+.reviews .row {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    background: #f4f5fb;
+    cursor: pointer;
+    overflow: hidden; /* Add overflow hidden to contain floated image */
+}
+
+.reviews h5 {
+    padding: 20px;
+    font-size: 17px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.reviews h5 img {
+    width: 50px;
+    border-radius: 50%;
+    float: left; /* Float the image to the left */
+    margin-right: 10px; /* Add margin to separate image and text */
+}
+
+.reviews p {
+    padding: 0 25px;
+    margin-top: 10px;
+}
+
+.reviews .rating {
+    color: rgb(101, 101, 10);
+    margin-left: 25px;
+}
+
+/* Responsive styles for screens with a max-width of 920px */
+@media (max-width: 920px) {
+    .reviews {
+        padding: 50px 6% 50px; /* Adjust padding */
+    }
+
+    .reviews .card-content {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+
+    .reviews .row {
+        height: auto; /* Adjust the height */
+        border-radius: 0; /* Remove border radius */
+        margin-bottom: 20px; /* Add some margin for separation */
+    }
+
+    .reviews h5 {
+        padding: 10px; /* Adjust padding */
+        font-size: 16px; /* Reduce font size */
+    }
+}
+
+
+/* Review Section End */
+/* Contact Section Start */
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+    font-family: 'Cormorant Garamond', serif;
+}
+#footer h1 span{
+    color:  rgb(33, 140, 183);;
+    font-family: 'Cormorant Garamond', serif;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #00b7ff;
+}
+/* Footer End */
+
+
+.main-txt{
+    text-align: center;
+}
+
+
+.testimonial-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h5 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* Add this CSS at the end of your existing style1.css */
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+      background-color: #fff; /* Change background color for mobile menu */
+      position: fixed;
+      width: 100%;
+      top: 56px; /* Adjust the top position to avoid overlap with the fixed navbar */
+      z-index: 1000;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+      background-color: rgba(12, 3, 51, 0.2);
+    }
+  
+    .navbar-nav .nav-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #fff; /* Add a border between menu items */
+    }
+  
+    .navbar-toggler {
+      color: #fff; /* Change color of the mobile menu icon */
+    }
+  
+    .home h1,
+    .home h4 {
+      font-size: 40px; /* Adjust font size for smaller screens */
+    }
+  
+    .book,
+    .packages,
+    .services,
+    .gallary,
+    .about {
+      padding: 30px; /* Adjust padding for better spacing on smaller screens */
+    }
+  
+    .book .card,
+    .packages .card,
+    .services .card,
+    .gallary .card,
+    .about .card {
+      margin-bottom: 20px; /* Add margin between cards for better spacing on smaller screens */
+    }
+  
+    .book form input,
+    .book form textarea {
+      width: 100%; /* Make form inputs full width on smaller screens */
+    }
+  
+    .book .submit {
+      width: 100%; /* Make submit button full width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .navbar-brand {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .navbar-brand img {
+      margin: 0 auto; /* Center the logo */
+    }
+  
+    .navbar-toggler {
+      margin-right: 15px; /* Add margin to the mobile menu icon for better spacing */
+    }
+  
+    .navbar-nav .nav-item {
+      border-bottom: none; /* Remove border between menu items on smaller screens */
+    }
+  
+    .home h1,
+    .home h4 {
+      font-size: 30px; /* Further reduce font size for smaller screens */
+    }
+  
+    .book,
+    .packages,
+    .services,
+    .gallary,
+    .about {
+      padding: 20px; /* Adjust padding for better spacing on smaller screens */
+    }
+  }
+  
